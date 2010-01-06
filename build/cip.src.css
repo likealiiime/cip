@@ -1,0 +1,340 @@
+body {
+	margin: 0;
+	width: 100%;
+	font-size: 12px;
+	font-family: 'Lucida Grande', Tahoma, Helvetica;
+	color: #333;
+}
+img { border: none; }
+table { border: none; }
+
+/* CIButton */
+.CIButton {
+	cursor: pointer;
+	display: block;
+}
+.CIButtonLeftCap {
+	overflow: hidden;
+	float: left;
+}
+.CIButtonMiddle {
+	float: left;
+	padding-top: 1px;
+}
+.CIButton.CIFormSubmitButton > .CIButtonMiddle {
+	font-weight: bold;
+}
+.CIButtonRightCap {
+	overflow: hidden;
+	float: left;
+}
+
+.CIDisabledButton {
+	color: #AAA !important;
+	cursor: default;
+}
+/* CIImageLink */
+.CIImageLink {
+	cursor: pointer;
+}
+
+/* CISourceList */
+
+.CISourceListCell {
+	padding: 5px;
+	cursor: pointer;
+	color: #333;
+}
+
+.CISourceListEmptyListCellSkin {
+	padding: 5px;
+	text-align: center;
+	font-weight: bold;
+	background-color: white;
+}
+
+/* CIForm */
+
+table.CIForm { border: none; }
+
+.CIFormLabel {
+	text-align: right;
+	width: 100px;
+}
+.CIFormTitle {
+	font-size: 1.2em;
+}
+.CIFormLabelField {
+	/*font-size: 1em;*/
+}
+.CIFormSubmitButton {
+	font-weight: bold;
+}
+
+/* CIAutoCompleteHandler */
+
+.CIAutocomplete {
+	position: absolute;
+	z-index: 400;
+	max-height: 250px;
+	overflow-x: hidden;
+	overflow-y: auto;
+	background-color: #DDD;
+}
+.CIAutocompleteResult {
+	padding: 5px;
+	cursor: pointer;
+}
+.CIAutoCompleteHighlight {
+	background-color: #FFF9C2;
+}
+/* CITabPanel */
+
+.CITabPanelTab {
+	background: url(/cip/images/widgets/CITab.png) repeat-x;
+	color: #666;
+	text-align: center;
+	padding: 3px;
+	cursor: pointer;
+	height: 15px;
+}
+.CITabPanelTab:hover {
+	color: #333;
+	background: url(/cip/images/widgets/CITab_over.png) repeat-x;
+}
+
+/* CIPanelBase */
+.CIPanelBase { border: none; }
+
+/* CICurtainPanel */
+
+.CICurtainPanel {
+	border: 1px solid #CCC;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+	background-color: #F6F6F6;
+	padding: 3px;
+}
+.CICurtainPanel:hover {
+	background-color: #F0F0F0;
+}
+.CICurtainPanel:active { }
+.CICurtainPanelLabel {
+	text-indent: 0;
+	text-align: center;
+	cursor: pointer;
+}
+.CICurtainPanelBody {
+	padding: 5px;
+}
+
+/* CITable */
+.CITableInnerContainer {
+	overflow: auto;
+}
+.CITableHeaderRow { }
+.CITableHeaderColumn {
+	background: url(/cip/images/widgets/CITableHeaderColumn.png) repeat-x;
+	border-bottom: 1px solid #CCC;
+	text-align: left;
+	font-size: 0.9em;
+	color: black;
+}
+.CITableHeaderColumnLeftBorder  { border-left: 1px solid #EEE; }
+.CITableHeaderColumnRightBorder { border-right: 1px solid #AAA; }
+
+.CITableNoDataColumn {
+	background-color: white;
+	font-weight: bold;
+	text-align: center;
+	color: black;
+}
+.CITableCell {
+	color: #333;
+	border-left: none;
+	word-wrap: break-word;
+}
+
+.CITableEditableCell {
+	cursor: pointer;
+	background-color: #FFF9EA;
+}
+.CITableEditableCell:hover { background-color: #FFF8D5; }
+.CISelectableTableRow {
+	cursor: pointer;
+}
+
+/* CIMenu */
+.CIMenu {
+	-webkit-box-shadow: 0px 2px 2px #AAA;
+	-moz-box-shadow: 0px 3px 3px #333;
+	box-shadow: 0px 3px 3px #333;
+}
+
+/* CISheet */
+
+.CISheet {
+	/* This is just a base number, CISheet increments it on each show */
+	z-index: 200;
+	width: 500px;
+	position: absolute;
+	background-color: #F9F9F9;
+	-webkit-box-shadow: 0px 3px 3px #333;
+	-moz-box-shadow: 0px 3px 3px #333;
+	box-shadow: 0px 3px 3px #333;
+	-webkit-border-bottom-left-radius: 3px;
+	-moz-border-radius-bottomleft: 3px;
+	border-bottom-left-radius: 3px;
+	-webkit-border-bottom-right-radius: 3px;
+	-moz-border-radius-bottomright: 3px;
+	border-bottom-right-radius: 3px;
+}
+.CISheetTitle {
+	background: url(/cip/images/widgets/CISheetTitle.png) repeat-x;
+	font-size: 1.2em;
+	border-bottom: 1px solid #AAA;
+	padding: 10px;
+}
+.CISheetContentContainer {
+	border-bottom: 1px solid #AAA;
+	border-top: 1px solid white;
+	padding: 10px;
+}
+.CISheetButtonsContainer {
+	margin-top: 20;
+	text-align: right;
+	background: url(/cip/images/widgets/CISheetButtonsContainer.png) repeat-x;
+	border-top: 1px solid white;
+	padding: 5px;
+	height: 20px;
+	-webkit-border-bottom-left-radius: 3px;
+	-moz-border-radius-bottomleft: 3px;
+	border-bottom-left-radius: 3px;
+	-webkit-border-bottom-right-radius: 3px;
+	-moz-border-radius-bottomright: 3px;
+	border-bottom-right-radius: 3px;
+}
+.CISheetDestructiveButtonsContainer {
+	float: left;
+}
+.CISheetOtherButtonsContainer {
+	float: right;
+}
+.CISheetOtherButtonsContainer > .CISheetButtonWrapper {
+	margin-left: 10px;
+	height: 18px;
+	float: left;
+}
+.CISheetDefaultButton {
+	font-weight: bold !important;
+}
+/* CIModalLayer */
+
+.CIModalLayer {
+	width: 100%;
+	height: 100%;
+	position: fixed;
+	top: 0; left: 0;
+	display: none;
+	background-image: url(/cip/images/widgets/CIModalLayer.png);
+	opacity: 0;
+	z-index: 200;
+}
+
+/* CIText */
+
+.CIText {
+	margin: 0;
+	padding: 0;
+	font-size: 1em;
+}
+
+/* CIHud */
+
+.CIHud {
+	width: 300px; height: 100px;
+	display: none;
+	position: absolute;
+	z-index: 200;
+	color: white;
+	font-size: 0.9em;
+	/*-webkit-box-shadow: 0px 3px 3px #333;
+	-moz-box-shadow: 0px 3px 3px #333;
+	box-shadow: 0px 3px 3px #333;*/
+}
+.CIHudTitleContainer {
+	display: block;
+	width: 100%;
+	border-bottom: 1px solid #AAA;
+	background: url(/cip/images/black_90.png);
+	-webkit-border-top-left-radius: 5px;
+	-moz-border-radius-topleft: 5px;
+	border-top-left-radius: 5px;
+	-webkit-border-top-right-radius: 5px;
+	-moz-border-radius-topright: 5px;
+	border-top-right-radius: 5px;
+	cursor: pointer;
+}
+.CIHudTitle {
+	font-size: 0.9em; font-weight: bold;
+	margin-left: 3px;
+}
+.CIHudTitleCloseButton {
+	margin-right: 3px;
+}
+.CIHudContentContainer {
+	background: url(/cip/images/widgets/CIHud.png);
+	-webkit-border-bottom-left-radius: 5px;
+	-moz-border-radius-bottomleft: 5px;
+	border-bottom-left-radius: 5px;
+	-webkit-border-bottom-right-radius: 5px;
+	-moz-border-radius-bottomright: 5px;
+	border-bottom-right-radius: 5px;
+	padding: 5px;
+}
+
+/* Skins */
+
+.CIHoverableSkin:hover {
+	background-color: #B5D3F2 !important;
+}
+.CIClickableSkin:active {
+	background-color: #7BABF2 !important;
+}
+.CIEvenSkin {
+	background-color: auto;
+}
+.CIOddSkin {
+	background-color: #F0F0F0;
+}
+
+/* CISelected */
+
+.CISelected {
+	background-repeat: repeat-x !important;
+	font-weight: bold !important;
+	color: white !important;
+}
+.CISelectedSkin_22 { background-image: url(/cip/images/selected/22.png) !important; }
+.CISelectedSkin_22_inverse { background-image: url(/cip/images/selected/22_inverse.png) !important; }
+.CISelectedSkin_25 { background-image: url(/cip/images/selected/25.png) !important; }
+.CISelectedSkin_25_inverse { background-image: url(/cip/images/selected/25_inverse.png) !important; }
+.CISelectedSkin_35 { background-image: url(/cip/images/selected/35.png) !important; }
+.CISelectedSkin_150 { background-image: url(/cip/images/selected/150.png) !important; }
+
+/* CIEditing */
+.CIEditingSkin_22 { background-image: url(/cip/images/editing/22.png) !important; }
+.CIEditingSkin_25 { background-image: url(/cip/images/editing/25.png) !important; }
+.CIEditingSkin_35 { background-image: url(/cip/images/editing/35.png) !important; }
+/*.CIEditingSkin_150 { background-image: url(/cip/images/editing/150.png) !important; }*/
+
+.CIkConnectedToElementBottom {
+	border-top: none;
+	-webkit-border-top-left-radius: 0;
+	-moz-border-radius-topleft: 0;
+	border-top-left-radius: 0;
+	-webkit-border-top-right-radius: 0;
+	-moz-border-radius-topright: 0;
+	border-top-right-radius: 0;
+}
