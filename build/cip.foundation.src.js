@@ -1,4 +1,4 @@
-/*! 0.4.90 */
+/*! 0.4.91 */
 /*
 ---
 
@@ -13940,6 +13940,8 @@ var CIResizeBehavior = new Class({
 		this.synthesize({
 			additions: [],
 			subtractions: [],
+			divisions: [],
+			multiplications: [],
 			willReceiveView: false
 		}, configuration);
 		this.additions = $splat(this.additions).map(this._lambdaCreator);
@@ -14003,6 +14005,10 @@ var CIResizeBehavior = new Class({
 	*/
 	minus: function(x) { this.subtractions.push(this._lambdaCreator(x)); return this; },
 	
+	dividedBy: function(x) { this.divisions.push(this._lambdaCreator(x)); return this; },
+	
+	times: function(x) { this.multiplications.push(this._lambdaCreator(x)); return this; },
+	
 	/*
 		Function: toInteger(view)
 		This retrieves the target value then performs additions and subtractions.
@@ -14014,6 +14020,8 @@ var CIResizeBehavior = new Class({
 		var x = this.targetValue();
 		if (x == null) return null;
 		
+		this.multiplications.each(function(multiplication) { x *= multiplication().toInt(); });
+		this.divisions.each(function(division) { x /= division().toInt(); });
 		this.additions.each(function(addition) { x += addition().toInt(); });
 		this.subtractions.each(function(subtraction) { x -= subtraction().toInt(); });
 		return x;

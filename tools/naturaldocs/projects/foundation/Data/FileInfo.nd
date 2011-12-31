@@ -1,3 +1,13 @@
 1.4
 JavaScript
-/Users/sherrod/Sites/cip/doc/src/foundation/cip.foundation.src.js	1260403962	1	/Users/sherrod/Sites/cip/doc/src/foundation/cip.foundation.src.js
+/Users/sherrod/Sites/cip/src/js/foundation/extensions.js	1262751936	1	extensions.js
+/Users/sherrod/Sites/cip/src/js/foundation/CIResizeBehavior.js	1268036520	1	CIResizeBehavior.js
+/Users/sherrod/Sites/cip/src/js/foundation/CIRect.js	1262751936	1	CIRect.js
+/Users/sherrod/Sites/cip/src/js/foundation/CIRequest.js	1262751936	1	CIRequest.js
+/Users/sherrod/Sites/cip/src/js/foundation/constants.js	1262751936	1	constants.js
+/Users/sherrod/Sites/cip/src/js/foundation/CIRequestable.js	1262751936	1	CIRequestable.js
+/Users/sherrod/Sites/cip/src/js/foundation/CIView.js	1262751936	1	CIView.js
+/Users/sherrod/Sites/cip/src/js/foundation/CIObject.js	1262751936	1	CIObject.js
+/Users/sherrod/Sites/cip/src/js/foundation/CIApplication.js	1262751936	1	CIApplication.js
+/Users/sherrod/Sites/cip/src/js/foundation/CIEvent.js	1262751936	1	CIEvent.js
+/Users/sherrod/Sites/cip/src/js/foundation/main.js	1262751936	1	main.js

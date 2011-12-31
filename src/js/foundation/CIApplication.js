@@ -37,7 +37,7 @@ var CIApplicationInstance = new Class({
 		Fires <CIEvent.ApplicationReady> when finished.
 		This should never be run manually
 	*/
-	'__main__': function __main__() {
+	'__main__': function() {
 		CIObject.implement(Chain);
 		Element.implement(Chain);
 		$$('body')[0].addClass(Browser.Engine.name);

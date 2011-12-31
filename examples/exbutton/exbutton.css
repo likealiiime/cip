@@ -1,0 +1,37 @@
+body {
+	font-family: "Lucida Grande", Tahoma, Helvetica, sans-serif;
+	font-size: 12px;
+	padding: 100px;
+	margin: 0;
+}
+body > div { margin-bottom: 2em; }
+
+.EXButton {
+	padding: 3px 5px 0 5px;
+	height: 19px;
+	background-image: url(images/normal.png);
+	background-color: #DDD;
+	border: 1px solid #CCC;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+	color: #666;
+	text-shadow: 0 1px 0 white;
+	text-align: center;
+}
+.EXButton:hover {
+	border: 1px solid #AAA;
+	color: #333;
+}
+.EXButton:active {
+	background-image: url(images/pressed.png);
+	background-color: #BBB;
+}
+.EXButton > div {
+	height: 16px;
+	float: left;
+}
+.EXButton > span {
+	cursor: default;
+	text-overflow: ellipsis;
+}

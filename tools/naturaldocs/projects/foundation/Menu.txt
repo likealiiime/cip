@@ -46,7 +46,17 @@ Format: 1.4
 # --------------------------------------------------------------------------
 
 
-File: cip.foundation.src.js  (cip.foundation.src.js)
+File: CIApplication.js  (CIApplication.js)
+File: CIEvent.js  (CIEvent.js)
+File: CIObject.js  (CIObject.js)
+File: CIRect.js  (CIRect.js)
+File: CIRequest.js  (CIRequest.js)
+File: CIRequestable.js  (CIRequestable.js)
+File: CIResizeBehavior.js  (CIResizeBehavior.js)
+File: CIView.js  (CIView.js)
+File: constants.js  (constants.js)
+File: extensions.js  (extensions.js)
+File: main.js  (main.js)
 
 Group: Index  {
 
@@ -54,5 +64,7 @@ Group: Index  {
    Class Index: Classes
    File Index: Files
    Function Index: Functions
+   Constant Index: Constants
+   Interface Index: Interfaces
    }  # Group: Index
 
